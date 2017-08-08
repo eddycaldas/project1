@@ -15,22 +15,26 @@
       City: <input type="text" class="city" id="city"></input>
       <button class="getInfo" id="submit">Submit</button>
     </form>
-    
     <br><br>
+    <!-- middle: weather and map. -->
     
-    <nav id="local">  
-      <div id="weather" class="local"></div>
-        <br>
-          <br>
-      
-      
-    
-        <div class="local" id="map"></div>
+    <div class="middle">  
+        <nav id="local">  
+        <div id="weather" class="local"></div>
+        <div class="mapBox">
+          <input type="text" id="autocomplete">
+            <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>        
+              <div id="map"></div>
+        </div>
+
+    </div>    
+
+        <!-- <div class="local-map" id="map"></div>
           <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9x_DScVVUvyY8odYsqYmzcbuN3YNndxw
               &callback=initMap">
                 </script>
-      
+       -->
 
     </nav><br><br><br><br>
     

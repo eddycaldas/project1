@@ -170,34 +170,6 @@ $.get(api + city)
   $(".concert-content10").append("<p>" + event[9]._embedded.venues[0].name + "</p>")
   $(".concert-content10").append("<a href=" + event[9].url+ ">BUY Ticket</a>") //buy tickets
 })
-$.get(api + city)
-.then(function(data){
-  var event = data._embedded.events
-  $(".concert-title11").empty()
-  $(".concert-image11").empty()
-  $(".group11").empty()
-  $(".concert-content11").empty()
-  $(".online11").empty()
-  $(".concert-image11").append(  "<p>" + event[10].name + "</p>" )
-  $(".concert-image11").append("<img src=" + event[10].images[0].url + ">") //image
-  $(".group11").append("<p>" + "Date: " +event[10].dates["start"].localDate + "</p>")
-  $(".concert-content11").append("<p>" + event[10]._embedded.venues[0].name + "</p>")
-  $(".concert-content11").append("<a href=" + event[10].url+ ">BUY Ticket</a>") //buy tickets
-})
-$.get(api + city)
-.then(function(data){
-  var event = data._embedded.events
-  $(".concert-title12").empty()
-  $(".concert-image12").empty()
-  $(".group12").empty()
-  $(".concert-content12").empty()
-  $(".online12").empty()
-  $(".concert-image12").append(  "<p>" + event[11].name + "</p>" )
-  $(".concert-image12").append("<img src=" + event[11].images[0].url + ">") //image
-  $(".group12").append("<p>" + "Date: " +event[11].dates["start"].localDate + "</p>")
-  $(".concert-content12").append("<p>" + event[11]._embedded.venues[0].name + "</p>")
-  $(".concert-content12").append("<a href=" + event[11].url+ ">BUY Ticket</a>") //buy tickets
-})
 })
 
 
@@ -226,7 +198,7 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
     map.fitBounds(place.geometry.viewport);
   } else {
     map.setCenter(place.geometry.location);
-    map.setZoom(5);
+    map.setZoom(8);
   }
   marker.setPosition(place.geometry.location);
   infoWindow.setContent('<div><strong>' + place.name + '</strong><br>');
