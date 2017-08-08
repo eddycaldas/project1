@@ -1,1 +1,58 @@
-
+img {
+    min-height: 20em;
+    max-height: 21em;
+}
+ .page-footer {
+   height: 100px;
+ }
+ .logo {
+   background-color: #EC9B55;
+   width: 100%;
+   height: 60px;
+   padding-top: 5px;
+   padding-bottom: 22px;
+ }
+body {
+ background: #F6D0AF;
+}
+ .local {
+  background-color: #F6D8AF;
+  width: 200px;
+  height: 230px;
+  /*border: 1px solid black;*/
+  padding-left:25px;
+}
+.card {
+  padding: 10px;  
+}
+.row {
+  display: inline-block;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  /*border: 1px solid black;*/
+}
+header {
+}
+h1 {
+  text-align: center;
+}
+footer {
+  background-color: #EC9B55;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  length: 40px;
+}
+#local {
+  display: flex;
+  justify-content: center;
+  
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+#map {
+  height: 230px;
+  width: 500px;
+ }
