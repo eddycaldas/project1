@@ -204,7 +204,7 @@ $.get(api + city)
 
 var mapOptions = {
     center: new google.maps.LatLng(37.7831,-122.4039),
-    zoom: 12,
+    zoom: 9,
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 
@@ -226,7 +226,7 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
     map.fitBounds(place.geometry.viewport);
   } else {
     map.setCenter(place.geometry.location);
-    map.setZoom(5);
+    map.setZoom(9);
   }
   marker.setPosition(place.geometry.location);
   infoWindow.setContent('<div><strong>' + place.name + '</strong><br>');

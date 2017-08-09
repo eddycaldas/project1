@@ -6,35 +6,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    
     <header class="logo">
-      <h1>El Topo Gigio</h1>
-      <!-- <h1 class="powered by">Powered by </h1> -->
+      <h1>El Topo Gigio</h1>  
+      <!-- <img class="topoGigio" src="image/topoGigio.jpg" -->
     </header><br><br>
     
     <form>
       City: <input type="text" class="city" id="city"></input>
       <button class="getInfo" id="submit">Submit</button>
     </form>
+    
+    
     <br><br>
     <!-- middle: weather and map. -->
     
     <div class="middle">  
         <nav id="local">  
-        <div id="weather" class="local"></div>
-        <div class="mapBox">
-          <input type="text" id="autocomplete">
-            <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>        
-              <div id="map"></div>
-        </div>
-
+          <div id="weather" class="local"></div>
+            <div class="mapBox">
+              <input type="text" id="autocomplete">
+                <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>        
+            <div id="map"></div>
+          </div>
     </div>    
-
-        <!-- <div class="local-map" id="map"></div>
-          <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9x_DScVVUvyY8odYsqYmzcbuN3YNndxw
-              &callback=initMap">
-                </script>
-       -->
 
     </nav><br><br><br><br>
     
@@ -179,9 +174,7 @@
                            
       </main>
     
-    <footer class="footer">
-      <!-- <img class="ticketmaster" src="image/Ticketmaster-logo.png">
-      <img class="openWeather" src="image/openweather.png"> -->
+    <footer>
     </footer>
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
